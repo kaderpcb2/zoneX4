@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zone4X.official: portfolio of Shaurab Sorker, a 19-year-old coder, student, web designer, and video editor. Happy to help with coding, web design, and video editing.">
+  <title>Zone4X.official | Shaurab Sorker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <!-- Navigation: links jump to sections lower on the page. -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#home">ZONE<span class="accent">4X</span></a>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#contact">Need help?</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme">☀️ Light mode</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero container" id="home">
+      <div class="reveal">
+        <p class="eyebrow">Welcome to Zone4X.official</p>
+        <h1>Hey, I'm <span class="accent">Shaurab Sorker.</span></h1>
+        <p class="role-line">I'm <span class="role" id="role">a coder</span></p>
+        <p class="hero-copy">
+          I'm 19, a coder and student. I also edit videos in DaVinci Resolve, design websites, and explore electronics.
+          I'm using Android Studio to create my upcoming apps.
+        </p>
+        <div class="interest-list hero-pills">
+          <span class="pill">🎨 Web design</span>
+          <span class="pill">🎬 DaVinci Resolve</span>
+          <span class="pill">💻 Basic C & C++</span>
+          <span class="pill">🔌 Electronics</span>
+        </div>
+        <div class="button-row">
+          <a class="button button-primary" href="#projects">Explore my projects ↗</a>
+          <a class="button button-secondary" href="#contact">Need help?</a>
+        </div>
+      </div>
+
+      <div class="profile-card reveal" aria-label="Zone4X chip emblem">
+        <div>
+          <svg class="chip" viewBox="0 0 260 260" role="img" aria-label="Zone4X circuit chip">
+            <circle class="ring" cx="130" cy="130" r="118" fill="none" stroke="currentColor" stroke-dasharray="3 9" opacity="0.6"/>
+            <g class="trace" fill="none" stroke="currentColor" stroke-width="1.6" opacity="0.75">
+              <path d="M70 100H40M70 130H30M70 160H40M190 100H220M190 130H230M190 160H220M100 70V40M130 70V30M160 70V40M100 190V220M130 190V230M160 190V220"/>
+            </g>
+            <g fill="currentColor"><circle cx="40" cy="100" r="3.5"/><circle cx="30" cy="130" r="3.5"/><circle cx="40" cy="160" r="3.5"/><circle cx="220" cy="100" r="3.5"/><circle cx="230" cy="130" r="3.5"/><circle cx="220" cy="160" r="3.5"/><circle cx="100" cy="40" r="3.5"/><circle cx="130" cy="30" r="3.5"/><circle cx="160" cy="40" r="3.5"/><circle cx="100" cy="220" r="3.5"/><circle cx="130" cy="230" r="3.5"/><circle cx="160" cy="220" r="3.5"/></g>
+            <rect class="chip-core" x="70" y="70" width="120" height="120" rx="18"/>
+            <text class="chip-text" x="130" y="148" text-anchor="middle">4X</text>
+          </svg>
+          <p class="chip-tag">Zone4X</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container reveal">
+        <p class="eyebrow">A little about me</p>
+        <h2 class="section-heading">Coder. Editor. Designer. <span class="accent">Student.</span></h2>
+        <p class="section-intro">Who I am and what I do when I'm not studying.</p>
+        <div class="about-grid">
+          <div class="about-panel">
+            <h3>Who am I?</h3>
+            <p>
+              I'm Shaurab Sorker, a 19-year-old coder and student. I build websites, know the basics of C and C++,
+              edit videos in DaVinci Resolve, and I'm curious about electronics. I'm using Android Studio to create my upcoming apps.
+            </p>
+          </div>
+          <div class="about-panel">
+            <h3>Things I enjoy</h3>
+            <p>I love traveling, reading books, running, and working out, and I follow F1. Electronics is where I want to build things, and I learn best by making projects. I game to relax too.</p>
+            <div class="interest-list">
+              <span class="pill">Electronics</span>
+              <span class="pill">Coding</span>
+              <span class="pill">Learning new skills</span>
+              <span class="pill">Video editing</span>
+              <span class="pill">Reading books</span>
+              <span class="pill">Traveling</span>
+              <span class="pill">Running</span>
+              <span class="pill">Workout</span>
+              <span class="pill">F1</span>
+              <span class="pill">Gaming</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container reveal">
+        <p class="eyebrow">What I'm learning</p>
+        <h2 class="section-heading">My <span class="accent">skills.</span></h2>
+        <p class="section-intro">Skills I'm building right now. They grow with every project.</p>
+        <div class="skills-grid">
+          <article class="skill-card"><div class="skill-icon" aria-hidden="true">🎬</div><h3>Pro Video Editing</h3><p>Editing videos in DaVinci Resolve: cuts, color grading, and sound.</p></article>
+          <article class="skill-card"><div class="skill-icon" aria-hidden="true">🌐</div><h3>Web Development</h3><p>HTML, CSS, and JavaScript. I built the Covenant Mission Church website and this portfolio.</p></article>
+          <article class="skill-card"><div class="skill-icon" aria-hidden="true">🎨</div><h3>Web Design</h3><p>Learning more about layout, color, typography, and animation to make better websites.</p></article>
+          <article class="skill-card"><div class="skill-icon" aria-hidden="true">💻</div><h3>Basic C & C++</h3><p>I know the basics: variables, loops, and functions. They're also the languages behind Arduino and ESP32.</p></article>
+          <article class="skill-card"><div class="skill-icon" aria-hidden="true">📱</div><h3>Android Studio</h3><p>Creating my upcoming apps, starting with a custom notepad.</p></article>
+          <article class="skill-card"><div class="skill-icon" aria-hidden="true">🛠️</div><h3>Android Modding Basics</h3><p>Modding APKs and exploring basic Android security, for learning only, on apps and devices I'm allowed to test.</p></article>
+          <article class="skill-card"><div class="skill-icon" aria-hidden="true">🔌</div><h3>Electronics</h3><p>Learning how circuits work and building mini projects with ESP32 and Arduino.</p></article>
+          <article class="skill-card"><div class="skill-icon" aria-hidden="true">✨</div><h3>AI Tools</h3><p>Learning how AI can help with research, coding, and new ideas.</p></article>
+          <article class="skill-card"><div class="skill-icon" aria-hidden="true">💪</div><h3>Basic Calisthenics</h3><p>Bodyweight training basics, plus running and regular workouts.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container reveal">
+        <p class="eyebrow">Things I'm making</p>
+        <h2 class="section-heading">My <span class="accent">projects.</span></h2>
+        <p class="section-intro">What I've built and what I'm building next.</p>
+        <div class="projects-grid">
+          <article class="card">
+            <p class="project-number">PROJECT 01 <span class="status live">Live</span></p>
+            <h3>Covenant Mission Church Website</h3>
+            <p>A ministry website I built for Covenant Mission Church. It's finished, and it runs well.</p>
+            <div class="project-tags"><span class="pill">Church</span><span class="pill">Ministry</span><span class="pill">Web</span></div>
+          </article>
+          <article class="card">
+            <p class="project-number">PROJECT 02 <span class="status live">Live</span></p>
+            <h3>Zone4X Portfolio</h3>
+            <p>This website. It shows who I am, what I can do, and how to reach me for help.</p>
+            <div class="project-tags"><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span></div>
+            <a class="project-link" href="#home">You're viewing it ↗</a>
+          </article>
+          <article class="card">
+            <p class="project-number">PROJECT 03 <span class="status next">Next up</span></p>
+            <h3>Custom Notepad App</h3>
+            <p>An Android app where I keep texts, songs, and important things in one place. Built in Android Studio, with AI to help organize and search notes.</p>
+            <div class="project-tags"><span class="pill">Android Studio</span><span class="pill">AI</span><span class="pill">Mobile app</span></div>
+            <a class="project-link" href="#roadmap">See the plan ↗</a>
+          </article>
+          <article class="card">
+            <p class="project-number">PROJECT 04 <span class="status ">Planned</span></p>
+            <h3>Creative & Learning Tool</h3>
+            <p>A useful tool for creativity and learning that anyone can use. I start it after the notepad app.</p>
+            <div class="project-tags"><span class="pill">Idea</span><span class="pill">Learning</span><span class="pill">Creative</span></div>
+            <a class="project-link" href="#roadmap">See the plan ↗</a>
+          </article>
+          <article class="card">
+            <p class="project-number">PROJECT 05 <span class="status ">Ongoing</span></p>
+            <h3>Electronics Mini Projects</h3>
+            <p>Making new things with ESP32, Arduino, and more. Small builds that teach me how circuits and code work together.</p>
+            <div class="project-tags"><span class="pill">ESP32</span><span class="pill">Arduino</span><span class="pill">Mini projects</span></div>
+            <a class="project-link" href="#roadmap">See the plan ↗</a>
+          </article>
+          <article class="card">
+            <p class="project-number">PROJECT 06 <span class="status ">Planned</span></p>
+            <h3>VFX & Ethical Hacking</h3>
+            <p>Learning visual effects (VFX) and going deeper into advanced hacking, the ethical way, to understand how apps and systems stay safe.</p>
+            <div class="project-tags"><span class="pill">VFX</span><span class="pill">Ethical hacking</span><span class="pill">Learning</span></div>
+            <a class="project-link" href="#roadmap">See the plan ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section class="section" id="roadmap">
+      <div class="container reveal">
+        <p class="eyebrow">My path</p>
+        <h2 class="section-heading">Level <span class="accent">up.</span></h2>
+        <p class="section-intro">Like a game, I clear one level at a time.</p>
+        <div class="xp"><span>1 of 5 levels cleared</span><div class="xp-bar"><i></i></div></div>
+        <ol class="levels">
+          <li class="level done"><span class="level-tag">Level 1</span><div><h3>Web basics</h3><p>Build the Covenant Mission Church website, then this portfolio.</p><div class="steps"><span class="pill">Church website</span><span class="pill">Portfolio</span></div></div><span class="level-state">Cleared</span></li>
+          <li class="level now"><span class="level-tag">Level 2</span><div><h3>Android basics</h3><p>Learn Android Studio and build a first simple app.</p><div class="steps"><span class="pill">Install Android Studio</span><span class="pill">First app</span><span class="pill">Screens and buttons</span></div></div><span class="level-state">Now playing</span></li>
+          <li class="level locked"><span class="level-tag">Level 3</span><div><h3>Notepad app</h3><p>Keep texts, songs, and important things in one place.</p><div class="steps"><span class="pill">Write notes</span><span class="pill">Save notes</span><span class="pill">Search</span></div></div><span class="level-state">Locked</span></li>
+          <li class="level locked"><span class="level-tag">Level 4</span><div><h3>Add AI</h3><p>Give the notepad AI help to organize and find notes.</p><div class="steps"><span class="pill">Summaries</span><span class="pill">Smart search</span></div></div><span class="level-state">Locked</span></li>
+          <li class="level locked"><span class="level-tag">Level 5</span><div><h3>Creative & learning tool</h3><p>Design and build a useful tool for everyone.</p><div class="steps"><span class="pill">Idea</span><span class="pill">Design</span><span class="pill">Build</span></div></div><span class="level-state">Locked</span></li>
+        </ol>
+        <h3 class="quest-title">Side quests</h3>
+        <ol class="levels">
+          <li class="level side"><span class="level-tag">Side quest</span><div><h3>Pro video editing</h3><p>Edit gameplay and short videos in DaVinci Resolve.</p><div class="steps"><span class="pill">Cuts</span><span class="pill">Color grading</span><span class="pill">Audio</span><span class="pill">Export</span></div></div><span class="level-state">Anytime</span></li>
+          <li class="level side"><span class="level-tag">Side quest</span><div><h3>Electronics mini projects</h3><p>Build new things with ESP32, Arduino, and more.</p><div class="steps"><span class="pill">Blink an LED</span><span class="pill">Read a sensor</span><span class="pill">Connect to an app</span></div></div><span class="level-state">Anytime</span></li>
+        <li class="level side"><span class="level-tag">Side quest</span><div><h3>C & C++</h3><p>Go from the basics to small programs, then use them with electronics.</p><div class="steps"><span class="pill">Basics</span><span class="pill">Loops and functions</span><span class="pill">Small projects</span></div></div><span class="level-state">Anytime</span></li>
+          <li class="level side"><span class="level-tag">Side quest</span><div><h3>Web design</h3><p>Learn more about websites and web design.</p><div class="steps"><span class="pill">Layout</span><span class="pill">Color and type</span><span class="pill">Animation</span></div></div><span class="level-state">Anytime</span></li>
+          <li class="level side"><span class="level-tag">Side quest</span><div><h3>APK modding</h3><p>Mod APKs to learn how apps work, and help others improve their own apps.</p><div class="steps"><span class="pill">How APKs work</span><span class="pill">Mods on my own apps</span><span class="pill">Help others improve</span></div></div><span class="level-state">Anytime</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container reveal">
+        <p class="eyebrow">Get help</p>
+        <h2 class="section-heading">Need any <span class="accent">help?</span></h2>
+        <p class="section-intro">Coding, web development, design, video editing, or something else. Tell me what you need by email. I don't have any social media, so email is the only way to reach me.</p>
+        <div class="skills-grid">
+          <article class="skill-card"><div class="skill-icon" aria-hidden="true">💻</div><h3>Coding help</h3><p>Help with coding problems in web languages and basic C and C++.</p></article>
+          <article class="skill-card"><div class="skill-icon" aria-hidden="true">🌐</div><h3>Web development</h3><p>Building and fixing websites with HTML, CSS, and JavaScript.</p></article>
+          <article class="skill-card"><div class="skill-icon" aria-hidden="true">🎨</div><h3>Web design</h3><p>Layouts, colors, and clean designs that look professional.</p></article>
+          <article class="skill-card"><div class="skill-icon" aria-hidden="true">🎬</div><h3>Video editing</h3><p>Editing in DaVinci Resolve: cuts, color grading, and sound.</p></article>
+          <article class="skill-card"><div class="skill-icon" aria-hidden="true">📱</div><h3>Android apps</h3><p>Getting started with Android Studio and app ideas.</p></article>
+          <article class="skill-card"><div class="skill-icon" aria-hidden="true">💬</div><h3>Any other info</h3><p>Questions about my projects, my tools, or anything else. Just ask.</p></article>
+        </div>
+        <div class="help-bar">
+          <div>
+            <span class="status live">Happy to help</span>
+            <p class="help-email">shaurabking@gmail.com</p>
+          </div>
+          <a class="button button-primary" href="mailto:shaurabking@gmail.com?subject=Need%20help">Email me ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Zone4X.official by Shaurab Sorker. Built one level at a time.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
