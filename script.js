@@ -76,3 +76,20 @@ const spy = new IntersectionObserver(function (entries) {
 document.querySelectorAll("main section[id]").forEach(function (section) {
   spy.observe(section);
 });
+
+// ---------- COPY EMAIL BUTTON ----------
+const copyButton = document.getElementById("copyEmail");
+copyButton.addEventListener("click", function () {
+  const email = "shaurabking@gmail.com";
+  const showCopied = function () {
+    copyButton.textContent = "Copied ✓";
+    setTimeout(function () { copyButton.textContent = "Copy email"; }, 2000);
+  };
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(email).then(showCopied).catch(function () {
+      window.prompt("Copy this email:", email);
+    });
+  } else {
+    window.prompt("Copy this email:", email);
+  }
+});

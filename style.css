@@ -560,8 +560,17 @@ body {
 
 /* ---------- PROJECTS + HELP ---------- */
 @media (min-width: 821px) { .projects-grid { grid-template-columns: repeat(2, 1fr); } }
-.help-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px; margin-top: 22px; padding: 24px 28px; background: var(--surface); border: 1px solid var(--border); border-radius: 20px; box-shadow: var(--shadow); }
-.help-bar .status { margin-left: 0; }
-.help-email { margin-top: 10px; font: 700 1.15rem "Courier New", Consolas, monospace; overflow-wrap: anywhere; }
 
 @media (min-width: 821px) { .projects-grid .card:last-child:nth-child(odd) { grid-column: 1 / -1; } }
+
+/* ---------- EMAIL CARD ---------- */
+.email-card { margin-top: 28px; padding: 34px; display: grid; gap: 22px; border: 1px solid rgba(34, 211, 238, 0.35); border-radius: 24px; background: linear-gradient(135deg, rgba(34, 211, 238, 0.1), var(--surface) 55%); box-shadow: 0 20px 60px rgba(34, 211, 238, 0.08); }
+.email-card .status { margin-left: 0; }
+.email-card h3 { margin-top: 12px; font-size: 1.6rem; }
+.email-note { margin-top: 6px; color: var(--muted); }
+.help-email { display: inline-block; margin-top: 16px; padding: 12px 18px; border: 1px dashed var(--accent); border-radius: 12px; font: 700 1.2rem "Courier New", Consolas, monospace; overflow-wrap: anywhere; }
+.email-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+button.button { font: inherit; font-weight: 700; cursor: pointer; }
+.email-tips { list-style: none; display: flex; flex-wrap: wrap; gap: 10px 22px; padding-top: 18px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.92rem; }
+.email-tips li::before { content: "✓"; margin-right: 8px; color: var(--accent); }
+@media (max-width: 540px) { .email-card { padding: 24px; } .help-email { font-size: 1rem; } }
